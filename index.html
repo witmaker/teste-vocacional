@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101329">
+  <title>Teste Vocacional | Future Tech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="wrap">
+    <div class="brand">CARREIRA<span>LAB</span> ✳</div>
+    <div class="tag">TESTE DE PROFISSÕES • EDIÇÃO 2027</div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Seu próximo nível começa aqui</div>
+        <h1>Qual é o seu <span class="accent">futuro</span> na tecnologia?</h1>
+        <p>Tem muita coisa acontecendo no mundo — e você pode fazer parte disso. Descubra qual área combina com seus
+          interesses e encontre uma oficina para transformar curiosidade em novas oportunidades.</p>
+      </div>
+      <div class="hero-art" aria-label="Ilustração de criatividade e tecnologia">
+        <div class="orbit">
+          <div class="core">✳</div>
+        </div>
+        <div class="float f1">CRIATIVIDADE</div>
+        <div class="float f2">TECNOLOGIA</div>
+        <div class="float f3">INOVAÇÃO</div>
+        <div class="float f4">FUTURO</div>
+      </div>
+    </section>
+
+    <section class="start-card">
+      <div>
+        <h2>Descubra qual oficina tem mais a sua vibe💡</h2>
+        <p>Não tem resposta certa ou errada, selecione a alternativa que mais combina com você!</p>
+      </div>
+      <button class="primary" id="startBtn">Iniciar teste →</button>
+    </section>
+
+    <section aria-labelledby="areas-title">
+      <div class="section-title">
+        <div class="eyebrow">Três possibilidades</div>
+        <h2 id="areas-title">Que universo tem a sua cara?</h2>
+        <p>Conheça as áreas que podem virar sua próxima paixão — ou até profissão.</p>
+      </div>
+      <div class="tracks">
+        <article class="track">
+          <div class="emoji">🧊</div>
+          <h3>Impressão 3D</h3>
+          <p>Imagine, modele e transforme ideias em objetos reais. Criatividade que sai da tela e ganha forma.</p>
+        </article>
+        <article class="track">
+          <div class="emoji">🎥
+          </div>
+          <h3>Comunicação Digital</h3>
+          <p>Crie conteúdo, conte histórias, conecte pessoas e faça marcas e ideias chegarem mais longe.</p>
+        </article>
+        <article class="track">
+          <div class="emoji">🤖</div>
+          <h3>Inteligência Artificial</h3>
+          <p>Explore ferramentas inteligentes, automatize tarefas e invente soluções para desafios reais.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="quiz" class="hidden">
+      <div class="quiz-card">
+        <div class="quiz-top"><strong>SEU MAPA DE INTERESSES</strong><span class="counter" id="counter">01 / 11</span>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="question-number" id="questionNumber">PERGUNTA 01</div>
+        <h2 class="question" id="questionText"></h2>
+        <div class="options" id="options"></div>
+        <div class="quiz-actions">
+          <button class="secondary" id="backBtn">← Voltar</button>
+          <button class="primary" id="nextBtn" disabled>Próxima →</button>
+        </div>
+        <p class="hint">Dica: responda pensando no que você realmente gostaria de fazer, não no que parece ser mais
+          fácil.</p>
+      </div>
+    </section>
+
+    <section id="result" class="result-card hidden" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <div class="wrap">CARREIRALAB • Uma iniciativa TechLab para você criar seu próprio caminho. ✳</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
